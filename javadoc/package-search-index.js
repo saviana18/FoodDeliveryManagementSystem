@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"org.example","l":"org.fooddelivery"},{"m":"org.example","l":"org.fooddelivery.bll"},{"m":"org.example","l":"org.fooddelivery.dataLayer"},{"m":"org.example","l":"org.fooddelivery.presentation"}];updateSearchResults();

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane alignment="CENTER" animated="false" collapsible="false" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="791.0" text="Reports" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.fooddelivery.presentation.Controller">
+   <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#seeOrders" text="See orders">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="reportStartHour" layoutX="14.0" layoutY="60.0" prefHeight="27.0" prefWidth="122.0" promptText="Start hour...">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="reportEndHour" layoutX="14.0" layoutY="98.0" prefHeight="27.0" prefWidth="122.0" promptText="End hour...">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="reportNoOfTimes" layoutX="14.0" layoutY="138.0" prefHeight="27.0" prefWidth="122.0" promptText="No of times...">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="reportClientUser" layoutX="14.0" layoutY="176.0" prefHeight="27.0" prefWidth="122.0" promptText="Client...">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="reportAmount" layoutX="14.0" layoutY="214.0" prefHeight="27.0" prefWidth="122.0" promptText="Amount...">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="reportDay" layoutX="14.0" layoutY="254.0" prefHeight="27.0" prefWidth="122.0" promptText="Day...">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TableView fx:id="reportPanelTable" layoutX="166.0" layoutY="13.0" prefHeight="470.0" prefWidth="615.0">
+               <columns>
+                  <TableColumn fx:id="reportClientCol" prefWidth="139.2000274658203" text="Client" />
+                  <TableColumn fx:id="reportOrderCol" prefWidth="220.00006103515625" text="Order" />
+                  <TableColumn fx:id="reportPriceCol" prefWidth="119.99993896484375" text="Price" />
+                  <TableColumn fx:id="reportDateCol" prefWidth="138.4000244140625" text="Date" />
+               </columns>
+            </TableView>
+            <Button layoutX="23.0" layoutY="361.0" mnemonicParsing="false" onAction="#getReport" text="Get report">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="22.0" layoutY="410.0" mnemonicParsing="false" onAction="#logOutAdminReport" prefHeight="26.0" prefWidth="80.0" text="Log out">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+   <font>
+      <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+   </font>
+</TitledPane>

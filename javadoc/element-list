@@ -1,0 +1,5 @@
+module:org.example
+org.fooddelivery
+org.fooddelivery.bll
+org.fooddelivery.dataLayer
+org.fooddelivery.presentation
